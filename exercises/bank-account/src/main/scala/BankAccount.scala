@@ -1,3 +1,4 @@
+
 trait BankAccount {
 
   def closeAccount(): Unit
@@ -8,6 +9,7 @@ trait BankAccount {
 }
 
 object Bank {
-  def openAccount(): BankAccount = ???
+  def openAccount(): BankAccount =
+    AkkaTypedBankAccount()
 }
 
